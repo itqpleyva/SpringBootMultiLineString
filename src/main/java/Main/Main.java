@@ -13,8 +13,6 @@ public class Main implements CommandLineRunner {
 	public static void main(String[] args) {
 		
 		SpringApplication.run(Main.class, args);
-		System.out.println("I am in");
-
 	}
 
 	public void run(String... args) throws Exception {
@@ -25,7 +23,6 @@ public class Main implements CommandLineRunner {
 			
 			reporte = reporte+"Line"+i+ "\n";
 		}
-		System.out.println(reporte);
 		
   	    FileWriter fileWriter = new FileWriter("file.txt", true);
   	    BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
